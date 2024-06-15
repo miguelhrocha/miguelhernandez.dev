@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { BLOG } from "@consts";
@@ -25,8 +25,8 @@ const posts = data.reduce((acc: Acc, post) => {
 const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 ---
 
-<Layout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
-  <Container>
+<PageLayout title={BLOG.TITLE} description={BLOG.DESCRIPTION}>
+  <Container size="md">
     <div class="space-y-10">
       <div class="space-y-4">
         {
@@ -48,4 +48,4 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
       </div>
     </div>
   </Container>
-</Layout>
+</PageLayout>

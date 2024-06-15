@@ -1,11 +1,11 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import { HOME } from "@consts";
 ---
 
-<Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
-  <Container>
+<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container size="md">
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
@@ -16,4 +16,4 @@ import { HOME } from "@consts";
       </section>
     </div>
   </Container>
-</Layout>
+</PageLayout>

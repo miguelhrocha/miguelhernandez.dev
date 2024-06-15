@@ -22,4 +22,15 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { blog, projects };
+const work = defineCollection({
+  type: "content",
+  schema: z.object({
+    company: z.string(),
+    role: z.string(),
+    place: z.string(),
+    dateStart: z.coerce.date(),
+    dateEnd: z.union([z.coerce.date(), z.string()]),
+  }),
+});
+
+export const collections = { blog, projects, work };

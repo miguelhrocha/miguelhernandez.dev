@@ -4,8 +4,8 @@ import Link from "@components/Link.astro";
 import { SITE } from "@consts";
 ---
 
-<header transition:persist>
-  <Container>
+<header id="header" transition:persist class="fixed top-0 w-full h-16 z-50">
+  <Container size="md">
     <div class="flex flex-wrap justify-between gap-y-2">
       <Link href="/" underline={false}>
         <div class="font-semibold">
