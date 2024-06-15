@@ -8,7 +8,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
+  DESCRIPTION: "Personal website of Miguel Hernández. Software Engineer based in Munich, Germany. Coding is the only skill I have.",
 };
 
 export const BLOG: Metadata = {
